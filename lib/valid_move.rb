@@ -3,9 +3,9 @@ def valid_move?(board, index)
 
   valid_move = boolean
 
-#  if position_taken?(board, index)
-#    valid_move = false
-  if index.to_i.between?(0, 8)
+  if position_taken?(board, index)
+    valid_move = false
+  elsif index.to_i.between?(0, 8)
     valid_move = true
   else
     valid_move = false
